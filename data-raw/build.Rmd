@@ -39,6 +39,8 @@ save_data <- function(..., name) {
     objs <- setNames(list(...), name)
     save(list = name, file = path, envir = list2env(objs), compress = "xz")
 }
+
+cur_dir <- getwd()
 ```
 
 ```{r load_recipes}
